@@ -1,7 +1,9 @@
 import Navbar from '../../components/Navbar/Navbar-client';
 import Footer from '../../components/Footer/Footer';
 import { Swiper, SwiperSlide } from "swiper/react";
- // eslint-disable-next-line
+import ListNotaries from '../../components/ListNotaries/ListNotaries';
+import DocUpload from '../../components/Docupload/DocUpload';
+import Calender from '../../components/Calender-Book/Calender'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";

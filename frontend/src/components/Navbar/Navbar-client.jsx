@@ -13,10 +13,10 @@ export default function Navbar(){
         </div>
       <div className='navbar'>
       <ul>
-        <li href='#Home'>Home</li>
+        <li><a href='#Home'>Home</a></li>
         <li href='#About'>Get Notarized</li>
         <li href='#Services'>Schedule Appointment</li>
-        <li href='#Contact Us'>My Notaries</li>
+        <li><a href='#Contact Us'>My Notaries</a></li>
       </ul>
       </div>
       <div className='menu'>

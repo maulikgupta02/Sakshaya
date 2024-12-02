@@ -1,8 +1,12 @@
-import Navbar from "../components/Navbar/Navbar-main";
-import Footer from "../components/Footer/Footer";
-import Services from "../components/Services/Services";
-import Testimonials from "../components/Testimonials/Testimonials";
-import "./Home.css"
+import { useNavigate } from 'react-router-dom';
+import Navbar from "../../components/Navbar/Navbar-main";
+import Footer from "../../components/Footer/Footer";
+import Services from "../../components/Services/Services";
+import Testimonials from "../../components/Testimonials/Testimonials";
+import "./Home.css";
+
+export default function Home() {
+  const navigate = useNavigate(); // Hook to programmatically navigate
 
   return (
     <>
@@ -28,7 +32,7 @@ import "./Home.css"
       </div>
 
       {/* The rest of the Home content */}
-      <div className='about'>
+      <div className='about' id='About'>
         <h1>Your Most Important Documents,</h1>
         <h1>Executed Online, Securely and</h1>
         <h1>Remotely</h1>
@@ -50,7 +54,7 @@ import "./Home.css"
             Grow your business by joining India's first network of online notaries. You choose
             when and where to work. We do the rest by connecting you to signers 24/7.
           </p>
-          <button className="notarize">Get Started Now</button>
+          <button className="notarize" onClick={() => navigate('/notary')}>Get Started Now</button>
         </div>
         <div className='pic'>
           <img src="/notary.png" alt="notary.png"></img>
@@ -74,10 +78,12 @@ import "./Home.css"
           </button>
         </div>
       </div>
-      <div className="service">
+      <div className="service" id='Services'>
         <Services />
       </div>
+      <div id='Contact'>
       <Footer />
+      </div>
     </>
   );
 }

@@ -13,9 +13,9 @@ export default function Navbar() {
       <div className='navbar'>
         <ul>
           <li onClick={() => navigate('/')}>Home</li>
-          <li onClick={() => navigate('/#About')}>About</li>
-          <li onClick={() => navigate('/#Services')}>Services</li>
-          <li onClick={() => navigate('/#Contact')}>Contact Us</li>
+          <li><a href='#About'>About</a></li>
+          <li><a href='#Services'>Services</a></li>
+          <li><a href='#Contact'>Contact Us</a></li>
           <li onClick={() => navigate('/login')}>Login</li>
         </ul>
       </div>
