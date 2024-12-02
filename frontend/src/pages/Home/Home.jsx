@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar/Navbar-main";
-import Footer from "../components/Footer/Footer";
-import Services from "../components/Services/Services";
-import Testimonials from "../components/Testimonials/Testimonials";
+import Navbar from "../../components/Navbar/Navbar-main";
+import Footer from "../../components/Footer/Footer";
+import Services from "../../components/Services/Services";
+import Testimonials from "../../components/Testimonials/Testimonials";
 import "./Home.css"
 
 export default function Home(){

@@ -1,5 +1,5 @@
 .Home {
-    background-image: url('../../public/home.png');
+    background-image: url('../../../public/home.png');
     background-position: center; 
     background-repeat: no-repeat; 
     background-size:cover;
@@ -60,6 +60,7 @@
 .about .banner{
     padding: 10px;
     background-color: black;
+    height: 80%;
 }
 
 .about img{

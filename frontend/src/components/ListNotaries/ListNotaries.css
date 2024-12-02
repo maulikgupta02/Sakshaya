@@ -11,7 +11,7 @@
     box-shadow: 0px 0px 2px black;
 }
 
-.title{
+.notary .title{
     margin-top: 1%;
     margin-bottom: 5%;
     padding-top: 1%;
@@ -25,27 +25,27 @@
     font-size: large;
 }
 
-.title table {
+.notary .title table {
     width: 100%;
     table-layout: fixed;
     border-spacing: 0;
 }
 
-.title td {
+.notary .title td {
     padding: 0px 20px 0px 20px;
 }
 
-.left {
+.notary .left {
     text-align: left;
     width: 50%;
 }
 
-.right {
+.notary .right {
     text-align: right;
     width: 50%;
 }
 
-.body{
+.notary .body{
     color: black;
     margin-top: 9%;
     margin-left: 2%;

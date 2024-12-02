@@ -32,3 +32,89 @@
 .templates h1{
     text-align: center;
 }
+
+.booking h1{
+  text-align: center;
+}
+
+.booking{
+  background-image: url("../../../public/upload_bg.png");
+  background-size: cover;
+  padding: 2%;
+}
+
+.appointment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  background-blend-mode: lighten;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 40px; /* Space between child sections */
+}
+
+
+.cal {
+  flex: 1;
+  text-align: center;
+}
+
+.pdf {
+  flex: 1;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%; /* Restricts PDF upload width */
+}
+
+.book {
+  margin-top: 20px;
+  width: 100%; /* Centers below calendar */
+  max-width: 500px; /* Restricts max width */
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Schedule button inside .book */
+.book button {
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book button:hover {
+  background-color: #1e88e5;
+}
+
+@media (max-width: 768px) {
+  .booking {
+    flex-direction: column; /* Stacks everything vertically */
+    align-items: center;
+  }
+
+  .appointment {
+    flex-direction: column; /* Stacks calendar and upload vertically */
+    align-items: center;
+  }
+
+  .cal, .pdf {
+    max-width: 100%;
+  }
+
+  .book {
+    max-width: 100%;
+  }
+}
