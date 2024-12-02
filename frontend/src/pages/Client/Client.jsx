@@ -1,11 +1,13 @@
 import Navbar from '../../components/Navbar/Navbar-client';
 import Footer from '../../components/Footer/Footer';
 import { Swiper, SwiperSlide } from "swiper/react";
+ // eslint-disable-next-line
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";
 import Templates from "../../components/notary_templates/Templates"
 import React, { useState } from "react";
+ // eslint-disable-next-line
 import { Formik, Form, Field } from "formik";
 import './Client.css'
 import * as Yup from "yup";

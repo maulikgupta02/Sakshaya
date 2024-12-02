@@ -1,48 +1,30 @@
 import './App.css';
-import React, { useState } from "react";
+import React from "react";
 import "react-calendar/dist/Calendar.css";
-import Calender from './components/Calender-Book/Calender';
-import ListNotaries from './components/ListNotaries/ListNotaries';
-import DocUpload from './components/Docupload/DocUpload'
+// import Calender from './components/Calender-Book/Calender';
+// import ListNotaries from './components/ListNotaries/ListNotaries';
+// import DocUpload from './components/Docupload/DocUpload'
 import Home from './pages/Home'
+import Client from './pages/Client/Client';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Login from './pages/register_login/Login';
+import Signup from './pages/register_login/Signup';
+import SignupNotary from './pages/register_login/Signup_Notary';
+
+
 
 function App() {
-  // const [freeSlots, setFreeSlots] = useState([
-  //   { date: "Sun Dec 03 2023", time: "09:00" },
-  //   { date: "Sun Dec 03 2023", time: "10:00" },
-  //   { date: "Mon Dec 04 2023", time: "11:00" },
-  // ]);
-  // const [selectedSlot, setSelectedSlot] = useState(null);
-
-  // const handleSlotSelect = (slot) => {
-  //   setSelectedSlot(slot);
-  //   alert(`You selected ${slot.date.toDateString()} at ${slot.time}`);
-  // };
-
   return (
     <>
-    <Home/>
-    {/* <div classname='booking'>
-    <div className='appointment'>
-      <h1>Appointment Slot Booking</h1>
-      <Calender freeSlots={freeSlots} onSlotSelect={handleSlotSelect} />
-      {selectedSlot && (
-        <div>
-          <h3>Selected Slot:</h3>
-          <p>
-            {selectedSlot.date.toDateString()} at {selectedSlot.time}
-          </p>
-        </div>
-      )}
-    </div>
-    <div className='pdf'>
-      <DocUpload/>
-    </div>
-    </div>
-    <div className='schedule'>
-      <button>schedule</button>
-    </div>
-    </> */}
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/client' element={<Client/>}/>
+        <Route path='/login' element ={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/register-notary' element = {<SignupNotary/>}/>
+      </Routes>
+    </Router>
     </>
   );
 }

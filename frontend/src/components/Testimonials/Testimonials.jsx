@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Testimonials.css';
 import { Swiper, SwiperSlide } from "swiper/react";
+// eslint-disable-next-line
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";
