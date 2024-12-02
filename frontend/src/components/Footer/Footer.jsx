@@ -46,7 +46,7 @@ export default function Footer(){
       <div className='contact'>
       <div className='logo'>
         <a href='./'>
-        <img src='./logo.png' />
+        <img src='./logo.png' alt='logo' />
         </a>
       </div>
         <table>

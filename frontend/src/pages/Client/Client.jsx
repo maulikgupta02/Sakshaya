@@ -1,15 +1,14 @@
 import Navbar from '../../components/Navbar/Navbar-client';
 import Footer from '../../components/Footer/Footer';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from 'swiper/modules';
-import ListNotaries from '../../components/ListNotaries/ListNotaries';
+ // eslint-disable-next-line
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";
 import Templates from "../../components/notary_templates/Templates"
 import React, { useState } from "react";
-import "react-calendar/dist/Calendar.css";
-import Calender from '../../components/Calender-Book/Calender';
-import DocUpload from '../../components/Docupload/DocUpload'
+ // eslint-disable-next-line
+import { Formik, Form, Field } from "formik";
 import './Client.css'
 
 export default function Client(){
