@@ -1,0 +1,60 @@
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 40px;
+    background-color: #413C3C; /* Light background for the footer */
+  }
+  
+  
+  .footer .contact,
+  .footer .feedback {
+    flex: 1; /* Take up equal space in the second column */
+    padding: 0 30px;
+    color: white;
+  }
+  
+  .footer .contact table,
+  .footer .feedback table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .footer .contact td,
+  .footer .feedback td {
+    padding: 10px 2px;
+    vertical-align: top;
+  }
+  
+  .footer .contact td:first-child,
+  .footer .feedback td:first-child {
+    width: 6%; /* Width of the label (icon + text) */
+  }
+  
+  .footer .contact td:last-child,
+  .footer .feedback td:last-child {
+    width: 70%; /* Width of the value or input field */
+  }
+  
+  .footer .feedback input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .footer .submit {
+    background-color: #452C2C;
+    color: #888483;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .footer .submit:hover {
+    color: white;
+  }
+  

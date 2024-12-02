@@ -1,0 +1,45 @@
+{
+    "services": [
+      {
+        "path": "/e-notary.jpg",
+        "title": "Remote Notarization",
+        "description": "Conduct notarization remotely, ensuring convenience from the comfort of home."
+      },
+      {
+        "path": "/ai.png",
+        "title": "AI-Assisted Notarization",
+        "description": "Leverage an AI chatbot for guided assistance throughout the notarization process."
+      },
+      {
+        "path": "/doc_manage.png",
+        "title": "Document Management",
+        "description": "View and download past notarized documents anytime for easy access."
+      },
+      {
+        "path": "/blockchain.jpg",
+        "title": "Tamper-Proof Storage",
+        "description": "Ensure tamper-proof storage of notarized documents using blockchain technology."
+      },
+      {
+        "path": "/automation.jpg",
+        "title": "Automated Notary Registries",
+        "description": "Automatically generate and manage notary registries for notary officers."
+      },
+      {
+        "path": "/appoint.jpg",
+        "title": "Appointment Scheduling",
+        "description": "Schedule appointments seamlessly with notary officers at preferred times."
+      },
+      {
+        "path": "/status.jpg",
+        "title": "Real-Time Status Tracking",
+        "description": "Track the status of ongoing notarization requests in real-time."
+      },
+      {
+        "path": "/sign.jpg",
+        "title": "Digital Signatures",
+        "description": "Facilitate digital signatures to enhance the notarization workflow."
+      }
+    ]
+  }
+  

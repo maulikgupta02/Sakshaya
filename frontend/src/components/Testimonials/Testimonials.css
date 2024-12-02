@@ -1,0 +1,31 @@
+.testimonials{
+    margin: 0px;
+}
+
+.swiper-container{
+    margin-bottom: 20px;
+}
+
+.testimonial-card{
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 300px;
+    max-width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.content{
+    justify-content: left;
+    max-height: 100px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.author{
+    margin-top: 0px;
+    justify-self: right;
+}

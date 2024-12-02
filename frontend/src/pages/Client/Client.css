@@ -1,0 +1,34 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .nav {
+    position: absolute; /* Ensure it's placed on top of the Swiper */
+    top: 0;
+    width: 100%; /* Ensure Navbar spans the entire width */
+    z-index: 10; /* Bring it in front of Swiper */
+  }
+  
+  .nav > * {
+    z-index: 11; /* To ensure all children of Navbar are above Swiper */
+  }
+
+.directions h1{
+    white-space: pre-line; 
+    margin-bottom: 100px;
+    color: #C5BABA;
+    font-size: 50px;
+    opacity: 80%;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.templates{
+    margin: 30px;
+}
+
+.templates h1{
+    text-align: center;
+}

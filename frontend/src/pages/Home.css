@@ -1,0 +1,105 @@
+.Home {
+    background-image: url('../../public/home.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height:650px;   
+}
+
+.text{
+    margin-top: 150px;
+    margin: 60px;
+    color: white;
+}
+
+
+.text h1{
+    font-size: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.text p{
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.notar{
+    padding-left: 60px;
+}
+
+.notarize{
+    background-color: #2D3339;
+    color: #d5d5d5;
+    padding: 20px 45px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.notarize:hover {
+    color: white; 
+    box-shadow: 0px 0px 5px black; 
+}
+
+.about{
+    margin-top: 30px;
+}
+.about h1{
+    justify-self: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin:0px;
+}
+
+.about p{
+    justify-self: center;
+    font-size: 30px;
+}
+
+.about .banner{
+    padding: 10px;
+    background-color: black;
+}
+
+.about img{
+    width: 80%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures the image covers the container */
+    display: block;
+    justify-self: center;
+    border:1px solid black;
+}
+
+.testimonials h1{
+    justify-self: center;
+    font-size: 40px;
+}
+
+.notaries {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space out text and image */
+    align-items: center; /* Vertically center content */
+    padding: 20px 100px 20px 100px; /* Add some padding */
+    background-color: #988282;
+    margin-top:20px;
+  }
+
+.notaries .info{
+    max-width: 500px;
+}
+
+.notaries h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.notaries p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.services{
+    width: 100%;
+}
