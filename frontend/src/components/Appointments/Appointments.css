@@ -1,0 +1,66 @@
+.appointment{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    gap: 10px;
+}
+
+.appointment h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.meet{
+    margin-top: 0%;
+    background-color: #D9D9D9;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 90%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px black;
+}
+
+.meet table {
+    width: 100%; /* Table spans the full width of its container */
+}
+
+.left {
+    position: relative;
+    left: 10px; 
+}
+
+.mid {
+    text-align: center; 
+}
+
+.right {
+    text-align: right; 
+    margin-right: 10px; 
+}
+
+.meet td{
+    padding: 2px 10px 2px 10px;
+    width: 33%;
+}
+
+.doc{
+    margin-right:5%;
+    background-color: #452C2C;
+    color: rgb(193, 193, 193);
+    padding:1% 4% 1% 4%;
+    cursor: pointer;
+}
+
+.join{
+    margin-right:10%;
+    background-color: #452C2C;
+    color: rgb(193, 193, 193);
+    padding:1% 4% 1% 4%;
+    cursor: pointer;
+}
+
+.join:hover, .doc:hover{
+    color: white;
+}

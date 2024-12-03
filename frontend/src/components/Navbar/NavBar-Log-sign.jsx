@@ -6,7 +6,7 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <div className='header'>
+    <div className='header' style={{ backgroundColor: '#957F7F' }}>
       <div className='logo' onClick={() => navigate('/')}>
         <img src='/logo.png' alt='Logo' />
       </div>

@@ -1,9 +1,9 @@
 import Calendar from "react-calendar";
 import React, { useState } from "react";
 import "react-calendar/dist/Calendar.css";
-import '/Calender.css'
+import './Calender.css'
 
-export default function Calendar() {
+export default function Calender() {
   // Local state to manage free slots
   const [freeSlots, setFreeSlots] = useState([]);
   const [selectedDate, setSelectedDate] = useState(new Date());
