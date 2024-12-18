@@ -12,9 +12,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^8.8.3"
+    "fs-extra": "^11.2.0",
+    "googleapis": "^144.0.0",
+    "mongoose": "^8.8.3",
+    "react-chatbot-kit": "^2.2.2"
   }
 }

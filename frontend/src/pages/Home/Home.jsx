@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar-main";
 import Footer from "../../components/Footer/Footer";
 import Services from "../../components/Services/Services";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import Chatbot from '../../components/chatbot/Chatbot';
 import "./Home.css";
 
 export default function Home() {
@@ -80,6 +81,9 @@ export default function Home() {
       </div>
       <div className="service" id='Services'>
         <Services />
+      </div>
+      <div className="chat">
+        <Chatbot/>
       </div>
       <div id='Contact'>
       <Footer />

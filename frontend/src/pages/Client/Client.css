@@ -40,17 +40,20 @@
 .booking{
   background-image: url("../../../public/upload_bg.png");
   background-size: cover;
-  padding: 2%;
+  padding: 5% 2% 5% 2%;
 }
 
-.appointment {
+.appointmentss {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   background-color: #f9f9f9;
   background-blend-mode: lighten;
-  padding: 20px;
+  opacity: 0.8;
+  padding: 40px 20px 40px 20px;
+  margin-left: 10%;
+  margin-right: 10%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   gap: 40px; /* Space between child sections */
@@ -75,6 +78,7 @@
   margin-top: 20px;
   width: 100%; /* Centers below calendar */
   max-width: 500px; /* Restricts max width */
+  opacity: 0.8;
   padding: 20px 30px;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -98,6 +102,26 @@
 .book button:hover {
   background-color: #1e88e5;
 }
+
+.notaries-list {
+  display: flex;
+  flex-wrap: wrap;         /* Allow items to wrap to the next line */
+  justify-content: space-between;  /* Space items out evenly */
+  gap: 20px;               /* Add space between cards */
+  margin: 5% 10% 5% 10%;
+}
+
+.chat {
+  position: fixed; /* Or absolute depending on your layout */
+  z-index: 100;
+  bottom: 20px; /* Adjust positioning based on your layout */
+  right: 20px;  /* Adjust positioning based on your layout */
+}
+
+.chat .rcw-widget-container {
+  z-index: 101; /* Ensure it's above other elements */
+}
+
 
 @media (max-width: 768px) {
   .booking {

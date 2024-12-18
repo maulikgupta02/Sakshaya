@@ -1,0 +1,50 @@
+[
+    {"title":"General Affidavit",
+    "template":"notary_templates/gen_affidavit.pdf",
+    "description":"A sworn statement of facts provided by an individual under oath, commonly used in legal proceedings"
+    },
+    {"title":"Power of Attorney",
+    "template":"notary_templates/power_of_attorney.pdf",
+    "description":"A document granting legal authority to another individual to act on your behalf in specified matters"
+    },
+    {"title":"Acknowledgment",
+    "template":"notary_templates/doc_ack.pdf",
+    "description":"A notary's certification that the signer of a document appeared before them and acknowledged signing the document"
+    },
+    {"title":"Bill of Sale",
+    "template":"notary_templates/bill_of_sale.pdf",
+    "description":"A document that transfers ownership of goods or personal property from one party to another."
+    },
+    {"title":"Declaration of Trust",
+    "template":"notary_templates/trust_declare.pdf",
+    "description":"A legal document stating that an individual holds property as a trustee for the benefit of another party."
+    },
+    {"title":"Lease Agreement",
+    "template":"notary_templates/lease.pdf",
+    "description":"A contract between a landlord and tenant outlining terms and conditions for renting property"
+    },
+    {"title":"Marriage Certificate",
+    "template":"notary_templates/marriage.pdf",
+    "description":"An affidavit used to verify the occurrence of a marriage for legal or administrative purposes."
+    },
+    {"title":"Living Will",
+    "template":"notary_templates/will.pdf",
+    "description":"A document specifying your wishes for medical treatment if you become unable to communicate them"
+    },
+    {"title":"Loan Agreement",
+    "template":"notary_templates/loan.pdf",
+    "description":"A contract between a lender and borrower outlining terms and conditions of a loan."
+    },
+    {"title":"Promissory Note",
+    "template":"notary_templates/promissory.pdf",
+    "description":"A written promise by one party to pay a specific amount of money to another party under defined terms."
+    },
+    {"title":"Travel Consent for Minor",
+    "template":"notary_templates/minor_travel.pdf",
+    "description":"A document granting permission for a minor to travel with another party"
+    },
+    {"title":"Affidavit of Identity",
+    "template":"notary_templates/id.pdf",
+    "description":"A document affirming the identity of an individual, often used in legal or financial situations"
+    }
+]

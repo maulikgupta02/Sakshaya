@@ -1,7 +1,7 @@
 import React from "react";
 import './Navbar.css';
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import PendingMeetsMenu from "../ClientHam/ClientHam"
 
 export default function Navbar(){
     return(
@@ -20,7 +20,8 @@ export default function Navbar(){
       </ul>
       </div>
       <div className='menu'>
-        <RxHamburgerMenu/>
+        {/* <RxHamburgerMenu/> */}
+        <PendingMeetsMenu/>
       </div>
       </div>
     )

@@ -2,7 +2,7 @@ import AvailableSlots from "../models/availableslotsModel.js";
 
 export const slots = async (req, res) => {
     try {
-        const { notary, date, timestamp } = req.body;
+        const { notary, date, timestamp } = req.query;
 
         if (!notary || !date || !timestamp) {
             return res.status(400).json({ message: "All fields are required!" });

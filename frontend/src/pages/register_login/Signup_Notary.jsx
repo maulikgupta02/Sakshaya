@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/NavBar-Log-sign';
 import { Calendar,Eye, EyeOff } from 'lucide-react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 const SignupNotary = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -20,6 +23,8 @@ const SignupNotary = () => {
     permanentAddress: '',
     currentAddress: '',
   });
+
+  const navigate = useNavigate(); // React Router hook for navigation
 
   const [sameAsPermAddr, setSameAsPermAddr] = useState(false);
 
@@ -43,6 +48,51 @@ const SignupNotary = () => {
       }));
     }
   };
+
+  const createUser = async (formData) => {
+    try {
+      // Make a POST request to the backend
+      const response = await axios.post('http://localhost:5000/api/user/signup', {
+        name: formData.name,
+        username: formData.username,
+        password: formData.password,
+        mobile: formData.mobile,
+        dob: formData.dob,
+        sex: formData.sex,
+        certificate_id: formData.certificate,
+        permanent_address: formData.permanentAddress,
+        current_Address: formData.currentAddress,
+      });
+  
+      // Handle successful registration
+      if (response.status === 200) {
+        console.log("Registration successful");
+        navigate("/login")
+        alert("Registration successful! You can now log in.");
+      }
+    } catch (error) {
+      // Handle errors gracefully
+      if (error.response) {
+        // Server responded with a status other than 2xx
+        console.error("Error response:", error.response.data);
+        alert(`Registration failed: ${error.response.data.message || "An error occurred"}`);
+      } else if (error.request) {
+        // Request was made but no response was received
+        console.error("No response received:", error.request);
+        alert("Registration failed: No response from server.");
+      } else {
+        // Other errors
+        console.error("Error:", error.message);
+        alert(`Registration failed: ${error.message}`);
+      }
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    createUser(formData); // Call the createUser function with the form data
+  };
+  
 
   return (
     <div className="h-screen flex flex-col">
@@ -212,6 +262,7 @@ const SignupNotary = () => {
                 <button
                   type="submit"
                   className="bg-[#3b2727] text-white px-8 py-2"
+                  onClick={handleSubmit} // Use the correct event handler
                 >
                   REGISTER
                 </button>

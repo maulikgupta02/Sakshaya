@@ -6,11 +6,11 @@ import Login from './pages/register_login/Login';
 import Signup from './pages/register_login/Signup';
 import SignupNotary from './pages/register_login/Signup_Notary';
 import Notary from './pages/Notary/Notary';
-
+import { MyProvider } from './context';
 
 function App() {
   return (
-    <>
+    <MyProvider>
     <Router>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -21,7 +21,7 @@ function App() {
         <Route path='/register-notary' element = {<SignupNotary/>}/>
       </Routes>
     </Router>
-    </>
+    </MyProvider>
   );
 }
 
