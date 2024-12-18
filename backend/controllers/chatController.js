@@ -1,8 +1,10 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import dotenv from "dotenv"
 import axios from 'axios';
 
+dotenv.config();
 // Initialize Google Generative AI with the API key
-const genAI = new GoogleGenerativeAI("AIzaSyDw0QN-bfQ9xHIh7wjNqaNCIzcVl2zmHrI");  // Use environment variable for the API key
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);  // Use environment variable for the API key
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // Main API handler function
