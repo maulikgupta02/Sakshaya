@@ -6,7 +6,7 @@ import Login from './pages/register_login/Login';
 import Signup from './pages/register_login/Signup';
 import SignupNotary from './pages/register_login/Signup_Notary';
 import Notary from './pages/Notary/Notary';
-import VideoCallPage from './pages/VideoCall/VideoCallPage'
+import { MyProvider } from './context';
 
 
 
@@ -21,7 +21,6 @@ function App() {
         <Route path='/login' element ={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/register-notary' element = {<SignupNotary/>}/>
-        <Route path='/video-call' element={<VideoCallPage/>}/>  {/* Added this route */}
       </Routes>
     </Router>
     </MyProvider>
